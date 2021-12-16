@@ -1,7 +1,12 @@
-import React from 'react'; 
+import React from 'react';
+
+import GithubProfileHeader from '../GithubProfileHeader';
+import GithubPublicRepositories from '../GithubPublicRepositories';
 
 
-const GithubOverview = () => {
+const GithubOverview = ({ username }) => {
+
+
 
 
     return (
@@ -9,6 +14,12 @@ const GithubOverview = () => {
             <h1>
                 Overview
             </h1>
+            <GithubProfileHeader
+                username={username}
+            />
+            <GithubPublicRepositories
+                username={username}
+            />
         </>
     )
 }
