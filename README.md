@@ -7,7 +7,11 @@
   - [Configuration](#configuration)
 
 ## About
-Be a show-off and display to the world what a Github rockstar you are. The provided React component will help you.
+Be a show-off and display to the world what a Github rockstar you are. The provided React component will help you:
+
+![Sample](./doc/img/sample.png)
+
+> Note: All the contents are auto generated only based on the Github `username`. 😏
 
 ## Development
 Runs the app in the development mode by using `npm start`. \
