@@ -32,7 +32,7 @@ const GithubProfileHeader = ({ username }) => {
                             <td style={{ padding: "0" }}>
                                 <Avatar src={profileInformation.avatar_url} size="100px"/>
                             </td>
-                            <td style={{ verticalAlign: "center", padding: "0" }}>
+                            <td style={{ verticalAlign: "center", padding: "0", paddingLeft: "20px" }}>
                                 <Heading >
                                     <Link href={profileInformation.html_url} sx={{ fontWeight: 'bold', color: 'fg.default', mr: 1 }} muted>
                                         {profileInformation.login}
