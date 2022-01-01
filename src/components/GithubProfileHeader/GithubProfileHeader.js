@@ -14,7 +14,6 @@ const GithubProfileHeader = ({ username }) => {
             if (profileInformation === undefined) {
                 const res = await fetch("https://api.github.com/users/" + username)
                 var jsonData = await res.json()
-                console.log(jsonData)
                 setProfileInformation(jsonData)
             }
         }
