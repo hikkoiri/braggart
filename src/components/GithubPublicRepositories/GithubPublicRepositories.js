@@ -32,12 +32,12 @@ const GithubPublicRepositories = ({ username }) => {
                             {publicRepositories.sort(function (a, b) {
                                 return b.created_at.localeCompare(a.created_at)
                             }).map((repo) => (
-                                <Timeline.Item condensed>
+                                <Timeline.Item condensed key={repo.name}>
                                     <Timeline.Badge>
                                         <StyledOcticon icon={GitCommitIcon} />
                                     </Timeline.Badge>
                                     <Timeline.Body>
-                                        <Link href={repo.url} sx={{ fontWeight: 'bold', color: 'fg.default', mr: 1 }} muted>
+                                        <Link href={repo.html_url} sx={{ fontWeight: 'bold', color: 'fg.default', mr: 1 }} muted>
                                             {repo.name}
                                         </Link>
                                         created at {new Date(repo.created_at).toLocaleDateString('de-DE')}
